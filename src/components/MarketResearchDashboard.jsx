@@ -480,9 +480,9 @@ export default function ChineseMarketDashboard() {
               </div>
               <div className="grid grid-cols-3 gap-6">
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-blue-400">96%</div>
-                  <div className="text-sm text-zinc-400 mt-1">Không có luyện thi HSK</div>
-                  <div className="text-xs text-zinc-600">GAP lớn nhất thị trường</div>
+                  <div className="text-4xl font-bold text-blue-400">32%</div>
+                  <div className="text-sm text-zinc-400 mt-1">Không thiết bị hỗ trợ</div>
+                  <div className="text-xs text-zinc-600">GAP lớn về trải nghiệm</div>
                 </div>
                 <div className="flex items-center justify-center">
                   <div className="text-center">
@@ -491,16 +491,15 @@ export default function ChineseMarketDashboard() {
                   </div>
                 </div>
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-emerald-400">67%</div>
-                  <div className="text-sm text-zinc-400 mt-1">HSK 1-3 (người mới)</div>
-                  <div className="text-xs text-zinc-600">Phân khúc chính</div>
+                  <div className="text-4xl font-bold text-emerald-400">68%</div>
+                  <div className="text-sm text-zinc-400 mt-1">Lớp quy mô tiêu chuẩn</div>
+                  <div className="text-xs text-zinc-600">Phân khúc 8-15 học viê</div>
                 </div>
               </div>
               <div className="mt-6 p-4 bg-zinc-900/60 rounded-xl">
                 <p className="text-sm text-zinc-400">
-                  <strong className="text-amber-400">💡 Insight:</strong> Thị trường tập trung vào người mới học nhưng 
-                  <span className="text-rose-400"> thiếu hoàn toàn dịch vụ luyện thi</span> để học viên đạt chứng chỉ. 
-                  First mover trong luyện thi HSK sẽ chiếm blue ocean.
+                  <strong className="text-amber-400">💡 Insight:</strong> Trong khi 1/3 thị trường vẫn dạy "chay" (đặc biệt là Bình Dương), việc chuẩn hóa 
+                  <span className="text-rose-400"> 100% thiết bị (TV/Máy chiếu) </span> và triển khai <span className="text-rose-400"> Phòng thi HSK </span> (tiện ích cực hiếm) sẽ biến SHZ từ một trung tâm phổ thông thành đơn vị dẫn đầu về trải nghiệm chuyên nghiệp. 
                 </p>
               </div>
             </section>
