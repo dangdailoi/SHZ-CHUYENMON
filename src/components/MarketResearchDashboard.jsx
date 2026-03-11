@@ -493,7 +493,7 @@ export default function ChineseMarketDashboard() {
                 <div className="text-center">
                   <div className="text-4xl font-bold text-emerald-400">68%</div>
                   <div className="text-sm text-zinc-400 mt-1">Lớp quy mô tiêu chuẩn</div>
-                  <div className="text-xs text-zinc-600">Phân khúc 8-15 học viê</div>
+                  <div className="text-xs text-zinc-600"Phân khúc 8-15 học viên</div>
                 </div>
               </div>
               <div className="mt-6 p-4 bg-zinc-900/60 rounded-xl">
