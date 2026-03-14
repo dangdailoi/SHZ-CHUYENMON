@@ -828,8 +828,8 @@ export default function ChineseMarketDashboard() {
               <section className="bg-zinc-900/40 rounded-2xl p-6 border border-zinc-800/50">
                 <div className="mt-4 p-4 bg-zinc-800/30 rounded-xl text-xs text-zinc-400">
                   <strong className="text-white font-medium">Tiêu chuẩn phổ biến:</strong>{' '}
-                  3 buổi/tuần, 90 phút/buổi (chiếm {'>'}80% thị trường)[cite: 105]. 
-                  Riêng HSK 5 chuyển sang lộ trình 2 buổi/tuần (89%)  để tối ưu thời gian tự học.
+                  3 buổi/tuần, 90 phút/buổi (chiếm {">"} 80% thị trường)[cite: 105]. 
+                  Riêng HSK 5 chuyển sang lộ trình 2 buổi/tuần (89%) để phù hợp yêu cầu tự học[cite: 103].
                 </div>
               </section>
             {/* QUY MÔ LỚP & THIẾT BỊ */}
