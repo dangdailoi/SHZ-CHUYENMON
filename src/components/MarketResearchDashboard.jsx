@@ -1175,7 +1175,7 @@ export default function ChineseMarketDashboard() {
               </div>
             </ExpandableSection>
           </div>
-        )}
+        )} {
 
       </main>
 
