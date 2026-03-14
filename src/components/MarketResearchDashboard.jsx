@@ -12,7 +12,7 @@ const data = {
   // Tổng quan
   totalCenters: 62,
   totalCourses: 179,
-  surveyPeriod: "Q1/2025",
+  surveyPeriod: "Q4/2025",
   
   // KPIs quan trọng - GAP = Cơ hội
   kpis: {
