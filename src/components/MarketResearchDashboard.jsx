@@ -493,7 +493,7 @@ export default function ChineseMarketDashboard() {
                 <div className="text-center">
                   <div className="text-4xl font-bold text-emerald-400">68%</div>
                   <div className="text-sm text-zinc-400 mt-1">Lớp quy mô tiêu chuẩn</div>
-                  <div className="text-xs text-zinc-600"Phân khúc 8-15 học viên</div>
+                  <div className="text-xs text-zinc-600">Phân khúc 8-15 học viên</div>
                 </div>
               </div>
               <div className="mt-6 p-4 bg-zinc-900/60 rounded-xl">
@@ -677,7 +677,7 @@ export default function ChineseMarketDashboard() {
             </div>
 
             {/* INSIGHT GIÁ */}
-            <section className="bg-amber-500/10 rounded-2xl p-6 border border-amber-500/20">
+            {/* <section className="bg-amber-500/10 rounded-2xl p-6 border border-amber-500/20">
               <div className="flex items-center gap-2 mb-4">
                 <Lightbulb className="w-5 h-5 text-amber-400" />
                 <h2 className="text-lg font-semibold text-white">Insight về định giá</h2>
@@ -698,7 +698,7 @@ export default function ChineseMarketDashboard() {
               </div>
             </section>
           </div>
-        )}
+        )} */}
 
         {/* ==================== TAB: ĐÀO TẠO ==================== */}
         {activeTab === 'training' && (
