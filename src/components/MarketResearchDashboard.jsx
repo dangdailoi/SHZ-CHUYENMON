@@ -479,9 +479,9 @@ export default function ChineseMarketDashboard() {
               </div>
               <div className="grid grid-cols-3 gap-6">
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-blue-400">32%</div>
-                  <div className="text-sm text-zinc-400 mt-1">Không thiết bị hỗ trợ</div>
-                  <div className="text-xs text-zinc-600">GAP lớn về trải nghiệm</div>
+                  <div className="text-4xl font-bold text-blue-400">2%</div>
+                  <div className="text-sm text-zinc-400 mt-1">Có phòng thi thử HSK</div>
+                  <div className="text-xs text-zinc-600">GAP cực lớn (98%) – Khoảng trống thị trường xanh</div>
                 </div>
                 <div className="flex items-center justify-center">
                   <div className="text-center">
@@ -490,15 +490,14 @@ export default function ChineseMarketDashboard() {
                   </div>
                 </div>
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-emerald-400">68%</div>
-                  <div className="text-sm text-zinc-400 mt-1">Lớp quy mô tiêu chuẩn</div>
-                  <div className="text-xs text-zinc-600">Phân khúc 8-15 học viên</div>
+                  <div className="text-4xl font-bold text-emerald-400">18%</div>
+                  <div className="text-sm text-zinc-400 mt-1">Có Giáo viên bản xứ</div>
+                  <div className="text-xs text-zinc-600">USP khan hiếm – Chỉ 1/5 thị trường đáp ứng được</div>
                 </div>
               </div>
               <div className="mt-6 p-4 bg-zinc-900/60 rounded-xl">
                 <p className="text-sm text-zinc-400">
-                  <strong className="text-amber-400">💡 Insight:</strong> Trong khi 1/3 thị trường vẫn dạy "chay" (đặc biệt là Bình Dương), việc chuẩn hóa 
-                  <span className="text-rose-400"> 100% thiết bị (TV/Máy chiếu) </span> và triển khai <span className="text-rose-400"> Phòng thi HSK </span> (tiện ích cực hiếm) sẽ biến SHZ từ một trung tâm phổ thông thành đơn vị dẫn đầu về trải nghiệm chuyên nghiệp. 
+                  <strong className="text-amber-400">💡 Insight:</strong> Với việc<span className="text-rose-400"> 98% </span> đối thủ bỏ ngỏ phòng thi thử và<span className="text-rose-400"> 82% </span> thiếu giáo viên bản xứ, đây là "Đại dương xanh" để bứt phá. Tập trung vào hai mũi nhọn này sẽ chuyển đổi vị thế từ một trung tâm dạy học thuần túy sang<span className="text-rose-400"> Đơn vị bảo chứng kết quả</span>, trực tiếp đánh đầu vào nhu cầu cấp thiết nhất của học viên mà thị trường chưa đáp ứng được. < 
                 </p>
               </div>
             </section>
