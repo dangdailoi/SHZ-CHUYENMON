@@ -94,7 +94,6 @@ const data = {
     { name: "Trợ giảng", percent: 20, type: "value-add" },
     { name: "Du học/Tư vấn", percent: 10, type: "premium" },
     { name: "Record bài giảng", percent: 7, type: "premium" },
-    { name: "Luyện thi HSK", percent: 4, type: "gap" },
     { name: "Thi thử HSK", percent: 2, type: "gap" }
   ],
   
