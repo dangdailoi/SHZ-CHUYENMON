@@ -825,11 +825,13 @@ export default function ChineseMarketDashboard() {
                   <Bar yAxisId="right" dataKey="months" name="Số tháng" fill="#f59e0b" radius={[4, 4, 0, 0]} />
                 </BarChart>
               </ResponsiveContainer>
-              <div className="mt-4 p-4 bg-zinc-800/30 rounded-xl text-xs text-zinc-400">
-                <strong className="text-white">Tiêu chuẩn phổ biến:</strong> 3 buổi/tuần, 90 phút/buổi chiếm >80%. HSK 5 chuyển sang 2 buổi/tuần do yêu cầu tự học cao hơn.
-              </div>
-            </section>
-
+              <section className="bg-zinc-900/40 rounded-2xl p-6 border border-zinc-800/50">
+                <div className="mt-4 p-4 bg-zinc-800/30 rounded-xl text-xs text-zinc-400">
+                  <strong className="text-white font-medium">Tiêu chuẩn phổ biến:</strong>{' '}
+                  3 buổi/tuần, 90 phút/buổi (chiếm {'>'}80% thị trường)[cite: 105]. 
+                  Riêng HSK 5 chuyển sang lộ trình 2 buổi/tuần (89%)  để tối ưu thời gian tự học.
+                </div>
+              </section>
             {/* QUY MÔ LỚP & THIẾT BỊ */}
             <div className="grid grid-cols-2 gap-6">
               <section className="bg-zinc-900/40 rounded-2xl p-6 border border-zinc-800/50">
