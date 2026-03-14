@@ -1083,14 +1083,7 @@ export default function ChineseMarketDashboard() {
             {/* KEY TAKEAWAYS */}
             <ExpandableSection title="💎 Key Takeaways" badge="Quan trọng" defaultOpen>
               <div className="space-y-4">
-                <div className="p-4 bg-rose-500/10 border border-rose-500/20 rounded-xl">
-                  <div className="text-sm font-medium text-rose-400 mb-2">GAP lớn nhất: Luyện thi HSK (96%)</div>
-                  <p className="text-xs text-zinc-400">
-                    Thị trường tập trung dạy kiến thức nhưng thiếu hoàn toàn dịch vụ luyện thi chuyên sâu. 
-                    First mover trong segment này sẽ chiếm blue ocean với nhu cầu cao.
-                  </p>
-                </div>
-
+        
                 <div className="p-4 bg-amber-500/10 border border-amber-500/20 rounded-xl">
                   <div className="text-sm font-medium text-amber-400 mb-2">Cam kết đang trở thành tiêu chuẩn</div>
                   <p className="text-xs text-zinc-400">
