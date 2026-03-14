@@ -549,16 +549,16 @@ export default function ChineseMarketDashboard() {
               </div>
             </section>
 
-            {/* TOP 5 CƠ HỘI */}
+            {/* TOP 6 CƠ HỘI */}
             <section>
-              <h2 className="text-sm font-medium text-zinc-500 uppercase tracking-wider mb-4">Top 5 Cơ hội chiến lược</h2>
+              <h2 className="text-sm font-medium text-zinc-500 uppercase tracking-wider mb-4">Top 6 Cơ hội chiến lược</h2>
               <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
                 <InsightCard icon="🎯" title="Luyện thi HSK chuyên sâu" value="96%" description="GAP = 96% không có → First mover advantage" type="opportunity" />
                 <InsightCard icon="📝" title="Thi thử HSK định kỳ" value="98%" description="Chỉ 2% có phòng thi mock → Blue ocean" type="opportunity" />
-                <InsightCard icon="🎓" title="GVBX cam kết" value="82%" description="82% không có → USP khan hiếm" type="opportunity" />
+                <InsightCard icon="🎓" title="GVBX" value="82%" description="82% không có → USP khan hiếm" type="opportunity" />
                 <InsightCard icon="📹" title="Record bài giảng" value="93%" description="Học viên cần ôn lại → Giá trị cao" type="opportunity" />
-                <InsightCard icon="👶" title="Thiếu nhi premium" value="8.3M" description="Giá TB cao nhất, phụ huynh sẵn sàng chi trả" type="success" />
-                <InsightCard icon="🏢" title="HSK 4-5 nâng cao" value="19%" description="Chỉ 19% thị phần → Room to grow" type="opportunity" />
+                <InsightCard icon="📱" title="📱" value="99%" description="99% thị trường bỏ ngỏ công nghệ → Trải nghiệm khác biệt." type="success" />
+                <InsightCard icon="🏢" title="Hỗ trợ việc làm" value="98%" description="Chỉ 2% có dịch vụ → Đánh trúng mục tiêu thực dụng." type="opportunity" />
               </div>
             </section>
           </div>
