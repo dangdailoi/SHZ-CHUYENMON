@@ -94,8 +94,10 @@ const data = {
     { name: "Trợ giảng", percent: 20, type: "value-add" },
     { name: "Du học/Tư vấn", percent: 10, type: "premium" },
     { name: "Record bài giảng", percent: 7, type: "premium" },
-    { name: "Thi thử HSK", percent: 2, type: "gap" }
-  ],
+    { name: "Thi thử HSK", percent: 2, type: "gap" },
+    { name: "App học tập", percent: 1, type: "gap" },
+    { name: "Phòng nghỉ rộng rãi", percent: 1, type: "gap" }
+    ],
   
   // Cam kết đầu ra
   commitments: [
