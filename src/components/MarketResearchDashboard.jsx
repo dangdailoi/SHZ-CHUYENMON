@@ -200,8 +200,8 @@ const data = {
     ],
     mediumTerm: [
       { action: "Tuyển/Hợp tác GVBX", timeline: "6-12 tháng", impact: "★★★★★", effort: "★★★★", risk: "Chi phí cao" },
-      { action: "Mở khóa Online chất lượng", timeline: "6-9 tháng", impact: "★★★★", effort: "★★★", risk: "Cạnh tranh với platform lớn" },
-      { action: "Phát triển phân khúc Thiếu nhi", timeline: "6-12 tháng", impact: "★★★★", effort: "★★★", risk: "Cần GV chuyên" }
+      { action: "Đẩy mạnh/Phát triển khóa Online", timeline: "6-9 tháng", impact: "★★★★", effort: "★★★", risk: "Cạnh tranh với platform lớn" },
+      { action: "Đẩy mạnh/Phát triển khóa Thiếu nhi", timeline: "6-12 tháng", impact: "★★★★", effort: "★★★", risk: "Cần đội ngũ GV chuyên biệt" }
     ]
   },
   
