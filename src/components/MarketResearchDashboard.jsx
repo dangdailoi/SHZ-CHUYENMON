@@ -676,7 +676,7 @@ export default function ChineseMarketDashboard() {
               </section>
             </div>
 
-            {/* INSIGHT GIÁ */}
+            {/* INSIGHT GIÁ
             <section className="bg-amber-500/10 rounded-2xl p-6 border border-amber-500/20">
               <div className="flex items-center gap-2 mb-4">
                 <Lightbulb className="w-5 h-5 text-amber-400" />
@@ -698,7 +698,7 @@ export default function ChineseMarketDashboard() {
               </div>
             </section>
           </div>
-        )}
+        )} */}
 
         {/* ==================== TAB: ĐÀO TẠO ==================== */}
         {activeTab === 'training' && (
