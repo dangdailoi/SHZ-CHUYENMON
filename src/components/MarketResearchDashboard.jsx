@@ -831,7 +831,7 @@ export default function ChineseMarketDashboard() {
                   3 buổi/tuần, 90 phút/buổi (chiếm {">"} 80% thị trường)[cite: 105]. 
                   Riêng HSK 5 chuyển sang lộ trình 2 buổi/tuần (89%) để phù hợp yêu cầu tự học[cite: 103].
                 </div>
-              </section>
+              </section> {
             {/* QUY MÔ LỚP & THIẾT BỊ */}
             <div className="grid grid-cols-2 gap-6">
               <section className="bg-zinc-900/40 rounded-2xl p-6 border border-zinc-800/50">
@@ -1175,8 +1175,8 @@ export default function ChineseMarketDashboard() {
               </div>
             </ExpandableSection>
           </div>
-        )} {
-
+        )}
+        
       </main>
 
       {/* FOOTER */}
