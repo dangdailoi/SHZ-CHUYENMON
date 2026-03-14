@@ -566,136 +566,115 @@ export default function ChineseMarketDashboard() {
         )}
 
         {/* ==================== TAB: GIÁ CẢ ==================== */}
-        {activeTab === 'pricing' && (
-          <div className="space-y-8">
-            {/* HERO PRICE COMPARISON */}
-            <section className="bg-gradient-to-br from-blue-500/10 via-transparent to-rose-500/10 rounded-2xl p-6 border border-zinc-800/50">
-              <h2 className="text-lg font-semibold text-white mb-6">So sánh giá theo khu vực</h2>
-              <div className="grid grid-cols-3 gap-8">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-400">6.0M</div>
-                  <div className="text-sm text-zinc-400">TB Offline HCM</div>
-                  <div className="text-xs text-zinc-600 mt-1">105K/giờ</div>
-                </div>
-                <div className="flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="text-2xl font-bold text-amber-400">1.7x</div>
-                    <div className="text-xs text-zinc-500">Chênh lệch</div>
-                  </div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-rose-400">3.0M</div>
-                  <div className="text-sm text-zinc-400">TB Offline BD</div>
-                  <div className="text-xs text-zinc-600 mt-1">62K/giờ</div>
-                </div>
-              </div>
-            </section>
-
-            {/* BẢNG GIÁ THEO CẤP ĐỘ */}
-            <section className="bg-zinc-900/40 rounded-2xl p-6 border border-zinc-800/50">
-              <h2 className="text-lg font-semibold text-white mb-6">Giá theo cấp độ HSK</h2>
-              <div className="overflow-x-auto">
-                <table className="w-full text-sm">
-                  <thead>
-                    <tr className="text-zinc-500 text-xs uppercase border-b border-zinc-800">
-                      <th className="text-left py-3">Cấp độ</th>
-                      <th className="text-right py-3">Online TB</th>
-                      <th className="text-right py-3">Offline TB</th>
-                      <th className="text-right py-3">Min</th>
-                      <th className="text-right py-3">Max</th>
-                      <th className="text-center py-3">Biên độ</th>
-                    </tr>
-                  </thead>
-                  <tbody className="text-zinc-300">
-                    {data.priceByLevel.map((item, i) => (
-                      <tr key={i} className="border-b border-zinc-800/50 hover:bg-zinc-800/30">
-                        <td className="py-3 font-medium text-white">{item.level}</td>
-                        <td className="text-right text-blue-400">{formatPrice(item.online)}</td>
-                        <td className="text-right text-emerald-400">{formatPrice(item.offline)}</td>
-                        <td className="text-right text-zinc-500">{formatPrice(item.min)}</td>
-                        <td className="text-right text-rose-400">{formatPrice(item.max)}</td>
-                        <td className="text-center">
-                          <div className="h-2 bg-zinc-800 rounded-full overflow-hidden">
-                            <div className="h-full bg-gradient-to-r from-emerald-500 to-rose-500 rounded-full" 
-                                 style={{ width: `${Math.min((item.max - item.min) / 300000, 100)}%` }} />
-                          </div>
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </section>
-
-            {/* PRICE CHART */}
-            <section className="bg-zinc-900/40 rounded-2xl p-6 border border-zinc-800/50">
-              <h2 className="text-lg font-semibold text-white mb-6">Biểu đồ giá Online vs Offline</h2>
-              <ResponsiveContainer width="100%" height={300}>
-                <BarChart data={data.priceByLevel}>
-                  <XAxis dataKey="level" stroke="#71717a" fontSize={12} />
-                  <YAxis stroke="#71717a" fontSize={12} tickFormatter={(v) => formatPrice(v)} />
-                  <Tooltip formatter={(value) => formatPrice(value)} contentStyle={{ backgroundColor: '#18181b', border: '1px solid #3f3f46' }} />
-                  <Bar dataKey="online" name="Online" fill="#3b82f6" radius={[4, 4, 0, 0]} />
-                  <Bar dataKey="offline" name="Offline" fill="#10b981" radius={[4, 4, 0, 0]} />
-                </BarChart>
-              </ResponsiveContainer>
-            </section>
-
-            {/* TOP TRUNG TÂM GIÁ */}
-            <div className="grid grid-cols-2 gap-6">
-              <section className="bg-zinc-900/40 rounded-2xl p-6 border border-zinc-800/50">
-                <h2 className="text-lg font-semibold text-white mb-4">🔥 Top 5 giá cao nhất</h2>
-                <div className="space-y-3">
-                  {data.topCenters.byHighPrice.map((item, i) => (
-                    <div key={i} className="flex items-center justify-between p-3 bg-zinc-800/30 rounded-lg">
-                      <div>
-                        <div className="text-sm font-medium text-white">{item.name}</div>
-                        <div className="text-xs text-zinc-500">{item.feature}</div>
-                      </div>
-                      <div className="text-rose-400 font-semibold">{formatPrice(item.avgPrice)}</div>
-                    </div>
-                  ))}
-                </div>
-              </section>
-
-              <section className="bg-zinc-900/40 rounded-2xl p-6 border border-zinc-800/50">
-                <h2 className="text-lg font-semibold text-white mb-4">💰 Top 5 giá thấp nhất</h2>
-                <div className="space-y-3">
-                  {data.topCenters.byLowPrice.map((item, i) => (
-                    <div key={i} className="flex items-center justify-between p-3 bg-zinc-800/30 rounded-lg">
-                      <div>
-                        <div className="text-sm font-medium text-white">{item.name}</div>
-                        <div className="text-xs text-zinc-500">{item.region}</div>
-                      </div>
-                      <div className="text-emerald-400 font-semibold">{formatPrice(item.avgPrice)}</div>
-                    </div>
-                  ))}
-                </div>
-              </section>
-            </div>
-            {/* INSIGHT GIÁ */}
-            <section className="bg-amber-500/10 rounded-2xl p-6 border border-amber-500/20">
-              <div className="flex items-center gap-2 mb-4">
-                <Lightbulb className="w-5 h-5 text-amber-400" />
-                <h2 className="text-lg font-semibold text-white">Insight về định giá</h2>
-              </div>
-              <div className="grid grid-cols-3 gap-4 text-sm">
-                <div className="p-4 bg-zinc-900/40 rounded-xl">
-                  <div className="text-amber-400 font-medium mb-2">Online không rẻ hơn!</div>
-                  <p className="text-xs text-zinc-400">Giá Online TB CAO HƠN Offline 3.7%. Thị trường Online tiếng Trung còn mới, định giá theo giá trị cảm nhận.</p>
-                </div>
-                <div className="p-4 bg-zinc-900/40 rounded-xl">
-                  <div className="text-amber-400 font-medium mb-2">Thiếu nhi premium</div>
-                  <p className="text-xs text-zinc-400">Giá TB 8.3M - cao hơn HSK 1-3. Phụ huynh sẵn sàng chi trả cao cho con em.</p>
-                </div>
-                <div className="p-4 bg-zinc-900/40 rounded-xl">
-                  <div className="text-amber-400 font-medium mb-2">HSK 5 jump cao</div>
-                  <p className="text-xs text-zinc-400">Offline HSK 5 TB 19M - gấp 4.5 lần HSK 1. Giá trị cảm nhận tăng mạnh theo cấp độ.</p>
-                </div>
-              </div>
-            </section>
+{activeTab === 'pricing' && (
+  <div className="space-y-8">
+    {/* HERO PRICE COMPARISON */}
+    <section className="bg-gradient-to-br from-blue-500/10 via-transparent to-rose-500/10 rounded-2xl p-6 border border-zinc-800/50">
+      <h2 className="text-lg font-semibold text-white mb-6">So sánh giá theo khu vực</h2>
+      <div className="grid grid-cols-3 gap-8">
+        <div className="text-center">
+          <div className="text-3xl font-bold text-blue-400">6.0M</div>
+          <div className="text-sm text-zinc-400">TB Offline HCM</div>
+          <div className="text-xs text-zinc-600 mt-1">105K/giờ</div>
+        </div>
+        <div className="flex items-center justify-center">
+          <div className="text-center">
+            <div className="text-2xl font-bold text-amber-400">1.7x</div>
+            <div className="text-xs text-zinc-500">Chênh lệch</div>
           </div>
-        )}
+        </div>
+        <div className="text-center">
+          <div className="text-3xl font-bold text-rose-400">3.0M</div>
+          <div className="text-sm text-zinc-400">TB Offline BD</div>
+          <div className="text-xs text-zinc-600 mt-1">62K/giờ</div>
+        </div>
+      </div>
+    </section>
+
+    {/* BẢNG GIÁ THEO CẤP ĐỘ */}
+    <section className="bg-zinc-900/40 rounded-2xl p-6 border border-zinc-800/50">
+      <h2 className="text-lg font-semibold text-white mb-6">Giá theo cấp độ HSK</h2>
+      <div className="overflow-x-auto">
+        <table className="w-full text-sm">
+          <thead>
+            <tr className="text-zinc-500 text-xs uppercase border-b border-zinc-800">
+              <th className="text-left py-3">Cấp độ</th>
+              <th className="text-right py-3">Online TB</th>
+              <th className="text-right py-3">Offline TB</th>
+              <th className="text-right py-3">Min</th>
+              <th className="text-right py-3">Max</th>
+              <th className="text-center py-3">Biên độ</th>
+            </tr>
+          </thead>
+          <tbody className="text-zinc-300">
+            {data.priceByLevel.map((item, i) => (
+              <tr key={i} className="border-b border-zinc-800/50 hover:bg-zinc-800/30">
+                <td className="py-3 font-medium text-white">{item.level}</td>
+                <td className="text-right text-blue-400">{formatPrice(item.online)}</td>
+                <td className="text-right text-emerald-400">{formatPrice(item.offline)}</td>
+                <td className="text-right text-zinc-500">{formatPrice(item.min)}</td>
+                <td className="text-right text-rose-400">{formatPrice(item.max)}</td>
+                <td className="text-center">
+                  <div className="h-2 bg-zinc-800 rounded-full overflow-hidden">
+                    <div className="h-full bg-gradient-to-r from-emerald-500 to-rose-500 rounded-full" 
+                         style={{ width: `${Math.min((item.max - item.min) / 300000, 100)}%` }} />
+                  </div>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    {/* PRICE CHART */}
+    <section className="bg-zinc-900/40 rounded-2xl p-6 border border-zinc-800/50">
+      <h2 className="text-lg font-semibold text-white mb-6">Biểu đồ giá Online vs Offline</h2>
+      <ResponsiveContainer width="100%" height={300}>
+        <BarChart data={data.priceByLevel}>
+          <XAxis dataKey="level" stroke="#71717a" fontSize={12} />
+          <YAxis stroke="#71717a" fontSize={12} tickFormatter={(v) => formatPrice(v)} />
+          <Tooltip formatter={(value) => formatPrice(value)} contentStyle={{ backgroundColor: '#18181b', border: '1px solid #3f3f46' }} />
+          <Bar dataKey="online" name="Online" fill="#3b82f6" radius={[4, 4, 0, 0]} />
+          <Bar dataKey="offline" name="Offline" fill="#10b981" radius={[4, 4, 0, 0]} />
+        </BarChart>
+      </ResponsiveContainer>
+    </section>
+
+    {/* TOP TRUNG TÂM GIÁ */}
+    <div className="grid grid-cols-2 gap-6">
+      <section className="bg-zinc-900/40 rounded-2xl p-6 border border-zinc-800/50">
+        <h2 className="text-lg font-semibold text-white mb-4">🔥 Top 5 giá cao nhất</h2>
+        <div className="space-y-3">
+          {data.topCenters.byHighPrice.map((item, i) => (
+            <div key={i} className="flex items-center justify-between p-3 bg-zinc-800/30 rounded-lg">
+              <div>
+                <div className="text-sm font-medium text-white">{item.name}</div>
+                <div className="text-xs text-zinc-500">{item.feature}</div>
+              </div>
+              <div className="text-rose-400 font-semibold">{formatPrice(item.avgPrice)}</div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="bg-zinc-900/40 rounded-2xl p-6 border border-zinc-800/50">
+        <h2 className="text-lg font-semibold text-white mb-4">💰 Top 5 giá thấp nhất</h2>
+        <div className="space-y-3">
+          {data.topCenters.byLowPrice.map((item, i) => (
+            <div key={i} className="flex items-center justify-between p-3 bg-zinc-800/30 rounded-lg">
+              <div>
+                <div className="text-sm font-medium text-white">{item.name}</div>
+                <div className="text-xs text-zinc-500">{item.region}</div>
+              </div>
+              <div className="text-emerald-400 font-semibold">{formatPrice(item.avgPrice)}</div>
+            </div>
+          ))}
+        </div>
+      </section>
+    </div>
+  </div>
+)}
 
         {/* ==================== TAB: ĐÀO TẠO ==================== */}
         {activeTab === 'training' && (
