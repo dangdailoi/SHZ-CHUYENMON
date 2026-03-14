@@ -166,16 +166,16 @@ const data = {
       rootCause: "GVBX khan hiếm, lương cao. Trung tâm nhỏ không đủ nguồn lực. BD có nhiều người gốc Hoa nhưng chưa khai thác tốt.",
       implication: "GVBX là USP khan hiếm. Chỉ cần vài buổi/khóa đã tạo khác biệt.",
       actionable: "Hợp tác GVBX bán thời gian, 4-6 buổi/khóa cho phần Nghe-Nói"
-    },
-    {
-      id: 4,
-      phenomenon: "Giá HCM gấp 1.7x Bình Dương (105K vs 62K/giờ)",
-      metric1: 105,
-      metric2: 62,
-      rootCause: "HCM có đối tượng thu nhập cao hơn, yêu cầu cao hơn. BD cạnh tranh gay gắt về giá, biên độ hẹp.",
-      implication: "HCM có không gian premium pricing. BD phải cạnh tranh bằng dịch vụ, không phải giá.",
-      actionable: "HCM: Định vị premium với GVBX, cam kết. BD: Tạo khác biệt bằng dịch vụ gia tăng"
-    }
+    }//,
+    // {
+    //   id: 4,
+    //   phenomenon: "Giá HCM gấp 1.7x Bình Dương (105K vs 62K/giờ)",
+    //   metric1: 105,
+    //   metric2: 62,
+    //   rootCause: "HCM có đối tượng thu nhập cao hơn, yêu cầu cao hơn. BD cạnh tranh gay gắt về giá, biên độ hẹp.",
+    //   implication: "HCM có không gian premium pricing. BD phải cạnh tranh bằng dịch vụ, không phải giá.",
+    //   actionable: "HCM: Định vị premium với GVBX, cam kết. BD: Tạo khác biệt bằng dịch vụ gia tăng"
+    // }
   ],
   
   // Ma trận cạnh tranh
@@ -676,7 +676,7 @@ export default function ChineseMarketDashboard() {
               </section>
             </div>
 
-            {/* INSIGHT GIÁ
+            {/* INSIGHT GIÁ */}
             <section className="bg-amber-500/10 rounded-2xl p-6 border border-amber-500/20">
               <div className="flex items-center gap-2 mb-4">
                 <Lightbulb className="w-5 h-5 text-amber-400" />
@@ -698,7 +698,7 @@ export default function ChineseMarketDashboard() {
               </div>
             </section>
           </div>
-        )} */}
+        )}
 
         {/* ==================== TAB: ĐÀO TẠO ==================== */}
         {activeTab === 'training' && (
