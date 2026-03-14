@@ -545,9 +545,9 @@ export default function ChineseMarketDashboard() {
               </div>
               <div className="mt-6 p-4 bg-zinc-900/60 rounded-xl">
                 <p className="text-sm text-zinc-400">
-                  <strong className="text-amber-400">💡 Insight:</strong> Với việc<span className="text-rose-400"> 98% </span> đối thủ bỏ ngỏ phòng thi thử và<span className="text-rose-400"> 82% </span> thiếu giáo viên bản xứ, đây là "Đại dương xanh" để bứt phá. Tập trung vào hai mũi nhọn này sẽ chuyển đổi vị thế từ một trung tâm dạy học thuần túy sang<span className="text-rose-400"> Đơn vị bảo chứng kết quả</span>, trực tiếp đánh đầu vào nhu cầu cấp thiết nhất của học viên mà thị trường chưa đáp ứng được. < 
+                  <strong className="text-amber-400">💡 Insight:</strong> Với việc<span className="text-rose-400"> 98% </span> đối thủ bỏ ngỏ phòng thi thử và<span className="text-rose-400"> 82% </span> thiếu giáo viên bản xứ, đây là "Đại dương xanh" để bứt phá. Tập trung vào hai mũi nhọn này sẽ chuyển đổi vị thế từ một trung tâm dạy học thuần túy sang<span className="text-rose-400"> Đơn vị bảo chứng kết quả</span>, trực tiếp đánh đầu vào nhu cầu cấp thiết nhất của học viên mà thị trường chưa đáp ứng được. 
                 </p>
-              </div>
+                </div>
             </section>
 
             {/* KEY METRICS */}
