@@ -150,12 +150,12 @@ const data = {
     },
     {
       id: 2,
-      phenomenon: "Chỉ 4% có luyện thi HSK, 96% không",
-      metric1: 4,
-      metric2: 96,
-      rootCause: "Thiếu năng lực xây dựng ngân hàng đề. Tập trung dạy kiến thức, chưa chú trọng chiến lược thi.",
-      implication: "GAP LỚN NHẤT thị trường. Học viên muốn thi chứng chỉ không có nơi luyện chuyên sâu.",
-      actionable: "Xây ngân hàng đề thi mock, tổ chức thi thử định kỳ, phân tích điểm yếu cá nhân"
+      phenomenon: "Chỉ 2% có thi thử HSK, 98% bỏ ngỏ",
+      metric1: 2,
+      metric2: 98,
+      rootCause: "Thiếu hệ thống đánh giá chuẩn và phòng thi tiêu chuẩn. Đa số chỉ cam kết dựa trên bài kiểm tra nội bộ.",
+      implication: "KHOẢNG TRỐNG CHIẾN LƯỢC. Học viên khao khát chứng chỉ nhưng không có môi trường cọ xát thực tế trước khi thi thật.",
+      actionable: "Triển khai Phòng thi thử HSK định kỳ, cung cấp báo cáo phân tích điểm yếu để bảo chứng kết quả đầu ra."
     },
     {
       id: 3,
