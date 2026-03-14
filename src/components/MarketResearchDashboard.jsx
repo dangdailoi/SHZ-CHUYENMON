@@ -673,6 +673,29 @@ export default function ChineseMarketDashboard() {
                 </div>
               </section>
             </div>
+            {/* INSIGHT GIÁ */}
+            <section className="bg-amber-500/10 rounded-2xl p-6 border border-amber-500/20">
+              <div className="flex items-center gap-2 mb-4">
+                <Lightbulb className="w-5 h-5 text-amber-400" />
+                <h2 className="text-lg font-semibold text-white">Insight về định giá</h2>
+              </div>
+              <div className="grid grid-cols-3 gap-4 text-sm">
+                <div className="p-4 bg-zinc-900/40 rounded-xl">
+                  <div className="text-amber-400 font-medium mb-2">Online không rẻ hơn!</div>
+                  <p className="text-xs text-zinc-400">Giá Online TB CAO HƠN Offline 3.7%. Thị trường Online tiếng Trung còn mới, định giá theo giá trị cảm nhận.</p>
+                </div>
+                <div className="p-4 bg-zinc-900/40 rounded-xl">
+                  <div className="text-amber-400 font-medium mb-2">Thiếu nhi premium</div>
+                  <p className="text-xs text-zinc-400">Giá TB 8.3M - cao hơn HSK 1-3. Phụ huynh sẵn sàng chi trả cao cho con em.</p>
+                </div>
+                <div className="p-4 bg-zinc-900/40 rounded-xl">
+                  <div className="text-amber-400 font-medium mb-2">HSK 5 jump cao</div>
+                  <p className="text-xs text-zinc-400">Offline HSK 5 TB 19M - gấp 4.5 lần HSK 1. Giá trị cảm nhận tăng mạnh theo cấp độ.</p>
+                </div>
+              </div>
+            </section>
+          </div>
+        )}
 
         {/* ==================== TAB: ĐÀO TẠO ==================== */}
         {activeTab === 'training' && (
