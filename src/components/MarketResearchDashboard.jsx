@@ -506,11 +506,12 @@ export default function ChineseMarketDashboard() {
             <section>
               <h2 className="text-sm font-medium text-zinc-500 uppercase tracking-wider mb-4">Khoảng trống thị trường (GAP = Cơ hội)</h2>
               <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
+                <KPICard icon={GraduationCap} label="GV trình độ HSK 6" value={8} gap={92} color="amber" insight="Chỉ 8% GV đạt mức này, điểm khác biệt để khẳng định chuyên môn" />
                 <KPICard icon={GraduationCap} label="Có GVBX" value={18} gap={82} color="amber" insight="GVBX khan hiếm - USP mạnh nếu có" />
                 <KPICard icon={Shield} label="Cam kết đầu ra" value={46} gap={54} color="blue" insight="Đang trở thành tiêu chuẩn ngành" />
                 <KPICard icon={BookOpen} label="Record bài giảng" value={7} gap={93} color="violet" insight="Học viên cần ôn lại, ít TT cung cấp" />
                 <KPICard icon={Award} label="Thi thử HSK" value={2} gap={98} color="emerald" insight="Gần như không ai có - Blue ocean" />
-                <KPICard icon={Globe} label="Lớp Online" value={37} gap={63} color="zinc" insight="Xu hướng tăng sau COVID" />
+                <KPICard icon={Globe} label="App học tập" value={1} gap={99} color="zinc" insight="GAP lớn nhất thị trường; cơ hội số hóa trải nghiệm người dùng" />
               </div>
             </section>
 
