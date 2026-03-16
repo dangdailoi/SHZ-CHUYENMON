@@ -6,8 +6,8 @@ const priceData = [
   { level:"HSK 1", onlineHCM:2870231, offlineHCM:2401483, onlineBD:2553855, offlineBD:2300000, min:500000,  max:5040000  },
   { level:"HSK 2", onlineHCM:3634231, offlineHCM:2798851, onlineBD:2935611, offlineBD:2300000, min:1000000, max:5040000  },
   { level:"HSK 3", onlineHCM:4870970, offlineHCM:3761950, onlineBD:3422583, offlineBD:2575000, min:1500000, max:6045000  },
-  { level:"HSK 4", onlineHCM:7144538, offlineHCM:8548750, onlineBD:4650000, offlineBD:, min:2400000, max:12160000 },
-  { level:"HSK 5", onlineHCM:17920000,offlineHCM:11413333,onlineBD:,offlineBD:,min:7680000, max:15040000 },
+  { level:"HSK 4", onlineHCM:7144538, offlineHCM:8548750, onlineBD:4650000, offlineBD:0, min:2400000, max:12160000 },
+  { level:"HSK 5", onlineHCM:17920000,offlineHCM:11413333,onlineBD:0,offlineBD:0,min:7680000, max:15040000 },
 ];
 
 const data = {
