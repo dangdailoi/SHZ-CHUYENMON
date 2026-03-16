@@ -460,20 +460,20 @@ export default function ChineseMarketDashboard() {
               <h2 className="text-lg font-semibold text-white mb-6">So sánh giá theo khu vực</h2>
               <div className="grid grid-cols-3 gap-8 text-center">
                 <div>
-                  <div className="text-3xl font-bold text-blue-400">6.0M</div>
+                  <div className="text-3xl font-bold text-blue-400">3.0M</div>
                   <div className="text-sm text-zinc-400">TB Offline HCM</div>
-                  <div className="text-xs text-zinc-600 mt-1">105K/giờ</div>
+                  {/* <div className="text-xs text-zinc-600 mt-1">105K/giờ</div> */}
                 </div>
                 <div className="flex items-center justify-center">
                   <div>
-                    <div className="text-2xl font-bold text-amber-400">1.7x</div>
+                    <div className="text-2xl font-bold text-amber-400">1.25x</div>
                     <div className="text-xs text-zinc-500">Chênh lệch</div>
                   </div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-rose-400">3.0M</div>
+                  <div className="text-3xl font-bold text-rose-400">2.4M</div>
                   <div className="text-sm text-zinc-400">TB Offline BD</div>
-                  <div className="text-xs text-zinc-600 mt-1">62K/giờ</div>
+                  {/* <div className="text-xs text-zinc-600 mt-1">62K/giờ</div> */}
                 </div>
               </div>
             </section>
