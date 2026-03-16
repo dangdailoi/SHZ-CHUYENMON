@@ -26,13 +26,12 @@ const data = {
     { name:"Thiếu nhi",count:12,percent:7,  color:"#10b981" },
     { name:"Khác",    count:14, percent:8,  color:"#6b7280" },
   ],
-  priceByLevel:[
-    { level:"HSK 1",    online:3433632,  offline:4200492  },
-    { level:"HSK 2",    online:3672600,  offline:4014703  },
-    { level:"HSK 3",    online:4862294,  offline:4707412  },
-    { level:"HSK 4",    online:8323000,  offline:6473846  },
-    { level:"HSK 5",    online:11476000, offline:18942333 },
-    { level:"Thiếu nhi",online:4800000,  offline:8287250  },
+  priceByLevel: [
+    { level: "HSK 1", online: 2662235, offline: 2366379 },
+    { level: "HSK 2", online: 3282609, offline: 2626404 },
+    { level: "HSK 3", online: 4200887, offline: 3453300 },
+    { level: "HSK 4", online: 6651812, offline: 8195000 },
+    { level: "HSK 5", online: 17920000, offline: 11413333 },
   ],
   curriculum:[
     { name:"HSK chuẩn",    percent:42, count:75 },
