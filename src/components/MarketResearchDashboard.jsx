@@ -3,11 +3,11 @@ import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, PieChart, Pi
 import { GraduationCap, Shield, BookOpen, Award, Globe, AlertTriangle, CheckCircle, XCircle, Eye, ArrowRight, Lightbulb, Zap, ThumbsUp, ThumbsDown, ChevronDown, ChevronRight } from "lucide-react";
 
 const priceData = [
-  { level:"HSK 1", onlineHCM:2366379, offlineHCM:5400000, onlineBD:2366379, offlineBD:2662235, min:500000,  max:9408000  },
-  { level:"HSK 2", onlineHCM:2626404, offlineHCM:5400000, onlineBD:2626404, offlineBD:3282609, min:1000000, max:9408000  },
-  { level:"HSK 3", onlineHCM:3453300, offlineHCM:5400000, onlineBD:3453300, offlineBD:4200887, min:1500000, max:7920000  },
-  { level:"HSK 4", onlineHCM:8195000, offlineHCM:6651812, onlineBD:8195000, offlineBD:6651812, min:2400000, max:14660000 },
-  { level:"HSK 5", onlineHCM:11413333,offlineHCM:17920000,onlineBD:11413333,offlineBD:17920000,min:7680000, max:17920000 },
+  { level:"HSK 1", onlineHCM:2870231, offlineHCM:2401483, onlineBD:2553855, offlineBD:2300000, min:500000,  max:5040000  },
+  { level:"HSK 2", onlineHCM:3634231, offlineHCM:2798851, onlineBD:2935611, offlineBD:2300000, min:1000000, max:5040000  },
+  { level:"HSK 3", onlineHCM:4870970, offlineHCM:3761950, onlineBD:3422583, offlineBD:2575000, min:1500000, max:6045000  },
+  { level:"HSK 4", onlineHCM:7144538, offlineHCM:8548750, onlineBD:4650000, offlineBD:, min:2400000, max:12160000 },
+  { level:"HSK 5", onlineHCM:17920000,offlineHCM:11413333,onlineBD:,offlineBD:,min:7680000, max:15040000 },
 ];
 
 const data = {
