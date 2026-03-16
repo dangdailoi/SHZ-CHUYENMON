@@ -13,9 +13,9 @@ const priceData = [
 const data = {
   totalCenters:62, totalCourses:179,
   regions:[
-    { name:"TP.HCM",    centers:29, courses:110, avgPrice:4572862, pricePerHour:, color:"#3b82f6" },
-    { name:"Bình Dương", centers:27, courses:54,  avgPrice:2967113, pricePerHour:,  color:"#f43f5e" },
-    { name:"Khác",       centers:6,  courses:15,  avgPrice:2602000, pricePerHour:,  color:"#6b7280" },
+    { name:"TP.HCM",    centers:29, courses:110, avgPrice:4572862, pricePerHour:0, color:"#3b82f6" },
+    { name:"Bình Dương", centers:27, courses:54,  avgPrice:2967113, pricePerHour:0,  color:"#f43f5e" },
+    { name:"Khác",       centers:6,  courses:15,  avgPrice:2602000, pricePerHour:0,  color:"#6b7280" },
   ],
   courseDistribution:[
     { name:"HSK 1",   count:53, percent:30, color:"#3b82f6" },
