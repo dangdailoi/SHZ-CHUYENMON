@@ -13,9 +13,9 @@ const priceData = [
 const data = {
   totalCenters:62, totalCourses:179,
   regions:[
-    { name:"TP.HCM",    centers:29, courses:110, avgPrice:5996020, pricePerHour:105444, color:"#3b82f6" },
-    { name:"Bình Dương", centers:27, courses:54,  avgPrice:3000451, pricePerHour:61746,  color:"#f43f5e" },
-    { name:"Khác",       centers:6,  courses:15,  avgPrice:3500000, pricePerHour:75000,  color:"#6b7280" },
+    { name:"TP.HCM",    centers:29, courses:110, avgPrice:4572862, pricePerHour:, color:"#3b82f6" },
+    { name:"Bình Dương", centers:27, courses:54,  avgPrice:2967113, pricePerHour:,  color:"#f43f5e" },
+    { name:"Khác",       centers:6,  courses:15,  avgPrice:2602000, pricePerHour:,  color:"#6b7280" },
   ],
   courseDistribution:[
     { name:"HSK 1",   count:53, percent:30, color:"#3b82f6" },
@@ -345,7 +345,7 @@ export default function ChineseMarketDashboard() {
                 <div className="text-center">
                   <div className="text-5xl font-bold text-rose-400">{data.totalCenters}</div>
                   <div className="text-sm text-zinc-400 mt-1">Trung tâm khảo sát</div>
-                  <div className="text-xs text-zinc-500">HCM • Bình Dương • Q1/2025</div>
+                  <div className="text-xs text-zinc-500">HCM • Bình Dương • Q4/2025</div>
                 </div>
                 <div className="w-px h-16 bg-zinc-800" />
                 <div className="text-center">
