@@ -32,6 +32,7 @@ const data = {
     { level: "HSK 3", online: 4200887, offline: 3453300 },
     { level: "HSK 4", online: 6651812, offline: 8195000 },
     { level: "HSK 5", online: 17920000, offline: 11413333 },
+    { level: "Thiếu nhi", online: 4045000, offline: 4800000},
   ],
   curriculum:[
     { name:"HSK chuẩn",    percent:42, count:75 },
