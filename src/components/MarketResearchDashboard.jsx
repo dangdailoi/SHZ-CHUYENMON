@@ -519,7 +519,7 @@ export default function ChineseMarketDashboard() {
               </div>
               <div className="mt-4 p-4 bg-zinc-800/20 rounded-lg border border-zinc-800/50">
                 <p className="text-xs text-zinc-500 leading-relaxed">
-                  <span className="text-amber-500 font-bold">💡 INSIGHT:</span> Giá trung bình tại HCM cao gấp 1.8 lần Bình Dương. Phân khúc HSK 3-4 tại HCM đang có lợi thế cạnh tranh khi thấp hơn trung bình thị trường từ 21-51% đối với hệ Online.
+                  {/* <span className="text-amber-500 font-bold">💡 INSIGHT:</span> Giá trung bình tại HCM cao gấp 1.8 lần Bình Dương. Phân khúc HSK 3-4 tại HCM đang có lợi thế cạnh tranh khi thấp hơn trung bình thị trường từ 21-51% đối với hệ Online. */}
                 </p>
               </div>
             </section>
