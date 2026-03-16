@@ -442,7 +442,7 @@ export default function ChineseMarketDashboard() {
             <section>
               <h2 className="text-sm font-medium text-zinc-500 uppercase tracking-wider mb-4">Top 6 Cơ hội chiến lược</h2>
               <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
-                <InsightCard icon="🎯" title="Luyện thi HSK chuyên sâu" value="96%" description="GAP = 96% không có → First mover advantage" type="opportunity" />
+                <InsightCard icon="🎓" title="Giáo viên trình độ HSK 6" value="92%" description="GAP = 92% chưa có → First mover advantage" type="opportunity" />
                 <InsightCard icon="📝" title="Thi thử HSK định kỳ"      value="98%" description="Chỉ 2% có phòng thi mock → Blue ocean"      type="opportunity" />
                 <InsightCard icon="🎓" title="GVBX"                     value="82%" description="82% không có → USP khan hiếm"               type="opportunity" />
                 <InsightCard icon="📹" title="Record bài giảng"         value="93%" description="Học viên cần ôn lại → Giá trị cao"          type="opportunity" />
