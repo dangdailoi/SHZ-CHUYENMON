@@ -3,11 +3,11 @@ import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, PieChart, Pi
 import { GraduationCap, Shield, BookOpen, Award, Globe, AlertTriangle, CheckCircle, XCircle, Eye, ArrowRight, Lightbulb, Zap, ThumbsUp, ThumbsDown, ChevronDown, ChevronRight } from "lucide-react";
 
 const priceData = [
-  { level:"HSK 1", onlineHCM:2870231, offlineHCM:2401483, onlineBD:2553855, offlineBD:2300000, min:500000,  max:5040000  },
-  { level:"HSK 2", onlineHCM:3634231, offlineHCM:2798851, onlineBD:2935611, offlineBD:2300000, min:1000000, max:5040000  },
-  { level:"HSK 3", onlineHCM:4870970, offlineHCM:3761950, onlineBD:3422583, offlineBD:2575000, min:1500000, max:6045000  },
-  { level:"HSK 4", onlineHCM:7144538, offlineHCM:8548750, onlineBD:4650000, offlineBD:0, min:2400000, max:12160000 },
-  { level:"HSK 5", onlineHCM:17920000,offlineHCM:11413333,onlineBD:0,offlineBD:0,min:7680000, max:15040000 },
+  { level:"HSK 1", onlineHCM:2401483, offlineHCM:2870231, onlineBD:2300000, offlineBD:2553855, min:500000,  max:5040000 },
+  { level:"HSK 2", onlineHCM:2798851, offlineHCM:3634231, onlineBD:2300000, offlineBD:2935611, min:1000000, max:5040000 },
+  { level:"HSK 3", onlineHCM:3761950, offlineHCM:4870970, onlineBD:2575000, offlineBD:3422583, min:1500000, max:6045000 },
+  { level:"HSK 4", onlineHCM:8548750, offlineHCM:7144538, onlineBD:0, offlineBD:4650000, min:2400000, max:12160000 },
+  { level:"HSK 5", onlineHCM:11413333, offlineHCM:17920000, onlineBD:0, offlineBD:0, min:7680000, max:15040000 },
 ];
 
 const data = {
@@ -27,12 +27,12 @@ const data = {
     { name:"Khác",    count:14, percent:8,  color:"#6b7280" },
   ],
   priceByLevel: [
-    { level: "HSK 1", online: 2662235, offline: 2366379 },
-    { level: "HSK 2", online: 3282609, offline: 2626404 },
-    { level: "HSK 3", online: 4200887, offline: 3453300 },
-    { level: "HSK 4", online: 6651812, offline: 8195000 },
-    { level: "HSK 5", online: 17920000, offline: 11413333 },
-    { level: "Thiếu nhi", online: 4045000, offline: 4800000},
+    { level: "HSK 1", online: 2366379, offline: 2662235 },
+    { level: "HSK 2", online: 2626404, offline: 3282609 },
+    { level: "HSK 3", online: 3453300, offline: 4200887 },
+    { level: "HSK 4", online: 8195000, offline: 6651812 },
+    { level: "HSK 5", online: 11413333, offline: 17920000 },
+    { level: "Thiếu nhi", online: 4800000, offline: 4045000 },
   ],
   curriculum:[
     { name:"HSK chuẩn",    percent:42, count:75 },
@@ -460,18 +460,18 @@ export default function ChineseMarketDashboard() {
               <h2 className="text-lg font-semibold text-white mb-6">So sánh giá theo khu vực</h2>
               <div className="grid grid-cols-3 gap-8 text-center">
                 <div>
-                  <div className="text-3xl font-bold text-blue-400">3.0M</div>
+                  <div className="text-3xl font-bold text-blue-400">4.6M</div>
                   <div className="text-sm text-zinc-400">TB Offline HCM</div>
                   {/* <div className="text-xs text-zinc-600 mt-1">105K/giờ</div> */}
                 </div>
                 <div className="flex items-center justify-center">
                   <div>
-                    <div className="text-2xl font-bold text-amber-400">1.25x</div>
+                    <div className="text-2xl font-bold text-amber-400">1.53x</div>
                     <div className="text-xs text-zinc-500">Chênh lệch</div>
                   </div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-rose-400">2.4M</div>
+                  <div className="text-3xl font-bold text-rose-400">3.0M</div>
                   <div className="text-sm text-zinc-400">TB Offline BD</div>
                   {/* <div className="text-xs text-zinc-600 mt-1">62K/giờ</div> */}
                 </div>
